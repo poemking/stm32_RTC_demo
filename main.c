@@ -54,15 +54,6 @@ static void LCD_display_task(void *pvParameters)
   RTC_TimeTypeDef RTC_TimeStruct;
   RTC_DateTypeDef RTC_DateStruct;
 
-<<<<<<< HEAD
-  uint8_t hour=23;
-  uint8_t min=45;
-  uint8_t sec=50;
-  uint8_t year=13;
-  uint8_t month=11;
-  uint8_t data=24;
-=======
->>>>>>> 9efbcffb81682db9d1453d562481f23f9984fb42
   LCD_GPIO_Init();
   Init_LCD();     //LCD  initialization       
  

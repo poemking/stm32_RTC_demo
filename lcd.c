@@ -81,11 +81,10 @@ void showCalendar_time(uint8_t hour, uint8_t min, uint8_t sec)
 	vTaskDelay(5);
 
 }
-<<<<<<< HEAD
-void showCalendar_day(uint8_t  year, uint8_t month, uint8_t data)
-=======
-void showCalendar_date(int year, int month, int data)
->>>>>>> 9efbcffb81682db9d1453d562481f23f9984fb42
+
+void showCalendar_date(uint8_t  year, uint8_t month, uint8_t date)
+
+
 {
 	vTaskDelay(5);
     LCD_CMD(0x80);	
@@ -111,9 +110,9 @@ void showCalendar_date(int year, int month, int data)
 
 	LCD_CMD(0x88);			//(row,column)=(1,9)
 	vTaskDelay(5);		 
-	LCD_DATA(table[data/10]);	
+	LCD_DATA(table[date/10]);	
 	vTaskDelay(5);
-	LCD_DATA(table[data%10]);
+	LCD_DATA(table[date%10]);
 	vTaskDelay(5);
 	
 	char i;
